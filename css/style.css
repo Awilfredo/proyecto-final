@@ -1,0 +1,62 @@
+main{
+    display: grid;
+    grid-template-areas: "a b";
+}
+
+
+
+section{
+    grid-area: a;
+    margin-top: 25px;
+    text-align: center;
+    display: block;
+    flex-wrap: wrap;
+    margin-right: 10px;
+    
+}
+
+section div{
+    display: block;
+    justify-items: center;
+    max-width: 600px;
+    
+}
+
+aside{
+    grid-area: b;
+    margin-top: 25px;
+    text-align: center;
+}
+#habilidades{
+    max-width: 400px;
+
+
+
+}
+
+.fport{
+    width: 200px;
+    height: 200px;
+}
+
+footer{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.redes{
+    width: 50px;
+    height: 50px;
+}
+.fcont{
+    display: flex;
+    justify-content: space-around;
+}
+
+@media (max-width: 768px) {
+    main{
+        display: grid;
+        grid-template-areas: "a a"
+                              "b b";
+    }
+  }
